@@ -1,0 +1,73 @@
+body{
+    margin: 0;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+*{
+    padding: 0;
+    box-sizing: border-box;
+    margin: 0;
+}
+.box{
+    width: 280px;
+}
+.input{
+    display: flex;
+}
+.box input{
+    width: 200px;
+    height: 35px;
+    padding: 0 5px;
+    outline: none;
+    border: 1px solid #dbdbdb;
+    border-radius: 3px 0 0 3px;
+}
+input::placeholder{
+    font-family: 'Vujahday Script', cursive;
+}
+.box button{
+    border: none;
+    border-radius: 0 3px 3px 0;    
+    cursor: pointer;
+}
+.items-container{
+    height: 300px;
+    overflow-y: auto;
+}
+.items-container ul{
+    list-style: none;
+}
+.items-container ul li{
+    height: 35px;
+    margin: 2px 0;
+    padding: 0 12px;
+    background: #fff;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    animation: effect .3s ease;
+    border: 1px solid #ededed;
+    overflow-x: auto;
+    font-size: 15px;
+    border-radius: 3px;
+}
+.li-text{
+    display: block;
+    width: 200px;
+    overflow-x: auto;
+}
+.fa-trash{
+    color: #bfbfbf;
+}
+@keyframes effect {
+    0%{
+        transform: translateX(-400px);
+        opacity: 0;
+    }
+    100%{
+        transform: translateX(0px);
+        opacity: 1;
+    }
+}
